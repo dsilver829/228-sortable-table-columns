@@ -2,9 +2,9 @@
 
 <table class="pretty">
   <tr>
-    <th><%= link_to "Name", :sort => "name" %></th>
-    <th><%= link_to "Price", :sort => "price" %></th>
-    <th><%= link_to "Released", :sort => "released_at" %></th>
+    <th><%= sortable "name" %></th>
+    <th><%= sortable "price" %></th>
+    <th><%= sortable "released_at", "Released" %></th>
   </tr>
   <% for product in @products %>
     <tr>
